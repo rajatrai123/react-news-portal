@@ -1,0 +1,121 @@
+/* ===== Global ===== */
+body {
+  margin: 0;
+  background: #f4f6f8;
+  font-family: Georgia, serif;
+}
+
+/* ===== Header ===== */
+.header {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo {
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 100%;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: center;
+}
+
+/* ===== Controls ===== */
+.controls {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search {
+  width: 70%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* ===== Info ===== */
+.info {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.error {
+  color: red;
+}
+
+/* ===== News Card ===== */
+.card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.25s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin: 0 0 10px;
+  font-size: 22px;
+  text-transform: capitalize;
+}
+
+.body {
+  color: #444;
+  line-height: 1.6;
+}
+
+.readMore {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+/* ===== Pagination ===== */
+.pagination {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.pageBtn {
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: #ddd;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pageBtn:hover {
+  background: #bbb;
+}
+
+.pageBtn.active {
+  background: #111;
+  color: white;
+}
+
+.pageBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
